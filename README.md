@@ -7,6 +7,7 @@ Az anyagok a Mentor Klub keretein belül készültek, és céljuk, hogy segítse
 
 - [AWS Cli telepítés és konfigurálás](#aws-cli-telepítés-és-konfigurálás)
 - [AWS Sagemaker Canvas](#aws-sagemaker-canvas)
+- [Amazon QuickSight](#amazon-quicksight)
 
 
 ## AWS CLI telepítés és konfigurálás
@@ -18,10 +19,10 @@ A telepítés és konfigurálás lépései megtalálhtók itt: https://github.co
 
 Az AWS Sagemaker Canvas egy vizuális eszköz, amely lehetővé teszi a felhasználók számára, hogy gépi tanulási modelleket építsenek és tanítsanak anélkül, hogy kódolniuk kellene. A Canvas segítségével könnyedén importálhatók adatok, előkészíthetők és modellek hozhatók létre.
 
-Bemutató anyagai a [01-sagemaker-canvas](01-sagemaker-canvas) mappában találhatók.
+Bemutató anyagai a [01-sagemaker-canvas](01-sagemaker-canvas/README.md) mappában találhatók.
 
 ### Amazon QuickSight
 
 Az Amazon QuickSight egy felhőalapú üzleti intelligencia szolgáltatás, amely lehetővé teszi a felhasználók számára, hogy interaktív vizualizációkat és jelentéseket készítsenek az adataikból. A QuickSight segítségével könnyedén elemezhetők az adatok, és megoszthatók a csapatokkal.
 
-Bemutató anyagai a [02-quicksight](02-quicksight) mappában találhatók.
+Bemutató anyagai a [02-quicksight](02-quicksight/README.md) mappában találhatók.
