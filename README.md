@@ -21,7 +21,7 @@ Az AWS Sagemaker Canvas egy vizuális eszköz, amely lehetővé teszi a felhaszn
 
 Bemutató anyagai a [01-sagemaker-canvas](01-sagemaker-canvas) mappában találhatók.
 
-### Amazon QuickSight
+## Amazon QuickSight
 
 Az Amazon QuickSight egy felhőalapú üzleti intelligencia szolgáltatás, amely lehetővé teszi a felhasználók számára, hogy interaktív vizualizációkat és jelentéseket készítsenek az adataikból. A QuickSight segítségével könnyedén elemezhetők az adatok, és megoszthatók a csapatokkal.
 
