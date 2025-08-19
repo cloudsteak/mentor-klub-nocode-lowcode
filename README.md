@@ -9,6 +9,7 @@ Az anyagok a Mentor Klub keretein belül készültek, és céljuk, hogy segítse
 - [AWS Sagemaker Canvas](#aws-sagemaker-canvas)
 - [Amazon QuickSight](#amazon-quicksight)
 - [Amazon AppFlow](#amazon-appflow)
+- [AWS Glue DataBrew](#aws-glue-databrew)
 
 
 ## AWS CLI telepítés és konfigurálás
@@ -33,3 +34,9 @@ Bemutató anyagai a [02-quicksight](02-quicksight) mappában találhatók.
 Az Amazon AppFlow egy felhőalapú szolgáltatás, amely lehetővé teszi az adatok egyszerű és biztonságos átvitelét különböző SaaS alkalmazások és AWS szolgáltatások között. Az AppFlow segítségével könnyedén integrálhatók az adatok, és automatizálhatók az adatfolyamok.
 
 Bemutató anyagai a [03-appflow](03-appflow) mappában találhatók.
+
+## AWS Glue DataBrew
+
+Az AWS Glue DataBrew egy vizuális adat-előkészítő szolgáltatás, amely lehetővé teszi a felhasználók számára, hogy könnyedén előkészítsék az adataikat anélkül, hogy kódolniuk kellene. A DataBrew segítségével gyorsan és egyszerűen végezhetők el az adattisztítási és átalakítási feladatok.
+
+Bemutató anyagai a [04-glue-databrew](04-glue-databrew) mappában találhatók.
