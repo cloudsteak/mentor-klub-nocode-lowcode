@@ -10,6 +10,7 @@ Az anyagok a Mentor Klub keretein belül készültek, és céljuk, hogy segítse
 - [Amazon QuickSight](#amazon-quicksight)
 - [Amazon AppFlow](#amazon-appflow)
 - [AWS Glue DataBrew](#aws-glue-databrew)
+- [Azure Data Factory](#azure-data-factory)
 
 
 ## AWS CLI telepítés és konfigurálás
@@ -40,3 +41,9 @@ Bemutató anyagai a [03-appflow](03-appflow) mappában találhatók.
 Az AWS Glue DataBrew egy vizuális adat-előkészítő szolgáltatás, amely lehetővé teszi a felhasználók számára, hogy könnyedén előkészítsék az adataikat anélkül, hogy kódolniuk kellene. A DataBrew segítségével gyorsan és egyszerűen végezhetők el az adattisztítási és átalakítási feladatok.
 
 Bemutató anyagai a [04-glue-databrew](04-glue-databrew) mappában találhatók.
+
+## Azure Data Factory
+
+Az Azure Data Factory egy felhőalapú adat-integrációs szolgáltatás, amely lehetővé teszi az adatok mozgatását és átalakítását különböző forrásokból és célokba. Az ADF segítségével könnyedén létrehozhatók adatfolyamok, amelyek automatizálják az adatok betöltését és feldolgozását.
+Bemutató anyagai a [05-azure-data-factory](05-azure-data-factory) mappában találhatók.
+
