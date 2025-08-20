@@ -96,11 +96,12 @@ _Megjegyzés: Mentsük el a jelenlegi munkát a Data Factory stúdióban, hogy n
 
    - Válaszd ki az "Add transformation" → "Derived column" lehetőséget.
    - Adj hozzá egy új oszlopot (`telefonszam_norm`), amelyben a következő kifejezést használod:
+   
      ```sql
-     iif( regexMatch(telefonszam, '^06'),
-       regexReplace(telefonszam, '^06', '+36'),
-       telefonszam
-     )
+      iif( regexMatch(telefonszam, '^06'),
+        regexReplace(telefonszam, '^06', '+36'),
+        telefonszam
+      )
      ```
    - Ez a kifejezés ellenőrzi, hogy a telefonszám 06-tal kezdődik-e, és ha igen, akkor +36-ra cseréli.
 
@@ -108,7 +109,7 @@ _Megjegyzés: Mentsük el a jelenlegi munkát a Data Factory stúdióban, hogy n
    - Válaszd ki az "Add transformation" → "Derived column" lehetőséget.
    - Adj hozzá egy új oszlopot (`testsuly_kg_norm`), amelyben a következő kifejezést használod:
      ```sql
-    toInteger(regexReplace(toString(testsuly_kg), `[^0-9]`, ''))
+      toInteger(regexReplace(toString(testsuly_kg), `[^0-9]`, ''))
      ```
    - Ez eltávolítja a testsúlyból a nem szám karaktereket, és egész számra konvertálja.
 
