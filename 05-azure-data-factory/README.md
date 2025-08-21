@@ -6,6 +6,11 @@ Az Azure Data Factory (ADF) egy felhőalapú adat-integrációs szolgáltatás, 
 
 CSV adatok automatizált betöltése tárhelyre, alap tisztítás (oszlopok kiválasztása, dátumformátum, kerekítés), optimalizált Parquet kimenethez.
 
+## Fájlok
+
+- [Hibas_adatok.xlsx](Hibas_adatok.xlsx): A hibás adatokat tartalmazó bemeneti fájl.
+- [README.md](README.md): A projekt leírását tartalmazó fájl.
+
 ## Azure Data Factory létrehozása
 
 1. Jelentkezz be az Azure Portalba.
