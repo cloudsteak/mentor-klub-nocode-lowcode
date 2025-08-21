@@ -33,7 +33,7 @@ CSV adatok automatizált betöltése tárhelyre, alap tisztítás (oszlopok kiv�
 1. A Data Factory-ben kattints a "Launch Studio" gombra.
 2. Egy új böngésző tab-on megnyílik a Data Factory stúdió.
 
-## Adatkészletek létrehozása
+### Adatkészletek létrehozása
 
 ### Bemeneti adatkészlet
 
@@ -96,13 +96,14 @@ _Megjegyzés: Mentsük el a jelenlegi munkát a Data Factory stúdióban, hogy n
 
    - Válaszd ki az "Add transformation" → "Derived column" lehetőséget.
    - Adj hozzá egy új oszlopot (`telefonszam_norm`), amelyben a következő kifejezést használod:
-   
+
      ```sql
       iif( regexMatch(telefonszam, '^06'),
         regexReplace(telefonszam, '^06', '+36'),
         telefonszam
       )
      ```
+
    - Ez a kifejezés ellenőrzi, hogy a telefonszám 06-tal kezdődik-e, és ha igen, akkor +36-ra cseréli.
 
 3. **Testsúly tisztítása**
@@ -113,7 +114,6 @@ _Megjegyzés: Mentsük el a jelenlegi munkát a Data Factory stúdióban, hogy n
      ```
    - Ez eltávolítja a testsúlyból a nem szám karaktereket, és egész számra konvertálja.
 
-
 ### Sink hozzáadása
 
 1. Ha készen vagy az adattisztítási lépésekkel, akkor adj hozzá egy "Sink" komponenst a DataFlow-hoz.
@@ -123,6 +123,24 @@ _Megjegyzés: Mentsük el a jelenlegi munkát a Data Factory stúdióban, hogy n
 5. ADataset type: Válaszd a "TisztaAdatok" lehetőséget (amit korábban létrehoztál).
 6. Settings fülön a "File name options" részben válaszd az "Output to single file" lehetőséget, és add meg a fájl nevét (Pl.: `Tiszta_adatok.parquet`).
 
-
 _Megjegyzés: Mentsük el a jelenlegi munkát a Data Factory stúdióban, hogy ne veszítsük el a beállításokat. Ezt a "Publish" gombra kattintva tehetjük meg._
 
+### Pipeline létrehozása
+
+1. A Data Factory stúdióban navigálj az "Author" → "Pipelines" menüpontra.
+2. Kattints az "Új" gombra, majd válaszd a "Pipeline" lehetőséget.
+3. Add meg a Pipeline nevét (Pl.: AdatTisztitasiFolyamat).
+4. a. Ha ütemezetten szeretnéd futtatni az adattisztítást, akkor van lehetőséged ütemezés létrehozására:
+   - A Pipeline szerkesztőben kattints az "Add trigger" gombra, majd válaszd a "New/Edit" lehetőséget.
+   - Állítsd be a trigger típusát (Pl.: "Schedule") és a futtatási időpontot.
+   - Kattints az "Ok" gombra a trigger mentéséhez.
+5. b. Ha manuálisan szeretnéd futtatni, akkor csak néhány egyszerű lépést kell végrehajtanod
+6. Bal oldalon az `Activities` panelen keresd meg a `Move and Transform` tevékenységet és azon belül keresd meg a `Data flow`-t, és húzd be a Pipeline területére.
+7. A `Data flow` tevékenység beállításaiban, adj neki egy nevet, majd a Settings fülön válaszd ki a korábban létrehozott `AdatTisztitas` DataFlow-t.
+8. Kattints a "Debug" gombra a Pipeline teszteléséhez.
+9. Ellenőrizd a Pipeline futási eredményeit a "Monitor" fül alatt.
+
+### Véglegesítés
+
+- Ha végeztél az ellenőrzéssel, akkor a Data flow-ban tiltsd le a Sampling-ot.
+- Finomítsd az ütemezést.
