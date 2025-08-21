@@ -8,6 +8,14 @@ Ebben a példában szemléltetjük az okos otthoni szenzoradatok megjelenítés�
 
 Egy egyszerű Python „eszköz” folyamatosan, valószerűen változó hőmérsékletadatot küld (drift + zaj), amit IoT Centralban valós időben megjelenítünk grafikonon.
 
+## Fájlok:
+
+- [iot.py](iot.py): Az IoT eszköz kódja, amely adatokat küld az IoT Central-ba.
+- [requirements.txt](requirements.txt): A szükséges Python csomagok listája.
+- [_.env](_.env): A környezeti változók fájlja. Haszálat előtt nevezd át `.env`-ra és töltsd ki a megfelelő értékekkel.
+- [README.md](README.md): A projekt leírása és dokumentációja.
+
+
 ## Tárfiók létrehozása
 
 1. Jelentkezz be az Azure Portalba.

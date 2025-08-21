@@ -5,13 +5,17 @@ Az anyagok a Mentor Klub keretein belül készültek, és céljuk, hogy segítse
 
 ## Tartalomjegyzék
 
+NoCode:
 - [AWS Cli telepítés és konfigurálás](#aws-cli-telepítés-és-konfigurálás)
 - [AWS Sagemaker Canvas](#aws-sagemaker-canvas)
 - [Amazon QuickSight](#amazon-quicksight)
 - [Amazon AppFlow](#amazon-appflow)
 - [AWS Glue DataBrew](#aws-glue-databrew)
 - [Azure Data Factory](#azure-data-factory)
+- [Azure IoT Central](#azure-iot-central)
 
+LowCode:
+- [Amazon LightSail](#amazon-lightsail)
 
 ## AWS CLI telepítés és konfigurálás
 
@@ -47,3 +51,14 @@ Bemutató anyagai a [04-glue-databrew](04-glue-databrew) mappában találhatók.
 Az Azure Data Factory egy felhőalapú adat-integrációs szolgáltatás, amely lehetővé teszi az adatok mozgatását és átalakítását különböző forrásokból és célokba. Az ADF segítségével könnyedén létrehozhatók adatfolyamok, amelyek automatizálják az adatok betöltését és feldolgozását.
 Bemutató anyagai a [05-azure-data-factory](05-azure-data-factory) mappában találhatók.
 
+## Azure IoT Central
+
+Az Azure IoT Central egy felhőalapú IoT (Internet of Things) alkalmazás, amely lehetővé teszi az IoT eszközök egyszerű és biztonságos kezelését. Az IoT Central segítségével könnyedén létrehozhatók IoT megoldások, amelyek lehetővé teszik az adatok gyűjtését, elemzését és vizualizálását.
+
+Bemutató anyagai a [06-azure-iot-central](06-azure-iot-central) mappában találhatók.
+
+## Amazon LightSail
+
+Az Amazon LightSail egy egyszerűsített felhőalapú szolgáltatás, amely lehetővé teszi a felhasználók számára, hogy könnyedén létrehozzanak és kezeljenek virtuális magánszervereket. A LightSail segítségével gyorsan és egyszerűen indíthatók el webalkalmazások, blogok és egyéb projektek.
+
+Bemutató anyagai a [07-amazon-lightsail](07-amazon-lightsail) mappában találhatók.  
