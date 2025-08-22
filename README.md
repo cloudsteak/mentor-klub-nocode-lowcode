@@ -17,6 +17,7 @@ NoCode:
 LowCode:
 - [Amazon LightSail](#amazon-lightsail)
 - [AWS App Runner](#aws-app-runner)
+- [AWS Amplify Studio](#aws-amplify-studio)
 
 ## AWS CLI telepítés és konfigurálás
 
@@ -69,3 +70,9 @@ Bemutató anyagai a [07-amazon-lightsail](07-amazon-lightsail) mappában találh
 Az AWS App Runner egy felhőalapú szolgáltatás, amely lehetővé teszi a fejlesztők számára, hogy könnyedén telepítsenek és futtassanak konténerizált webalkalmazásokat anélkül, hogy a háttérinfrastruktúrával kellene foglalkozniuk.
 
 Bemutató anyagai a [08-aws-app-runner](08-aws-app-runner) mappában találhatók.
+
+## AWS Amplify Studio
+
+Az AWS Amplify Studio egy vizuális fejlesztői környezet, amely lehetővé teszi a felhasználók számára, hogy könnyedén létrehozzanak és kezeljenek web- és mobilalkalmazásokat. Az Amplify Studio segítségével gyorsan és egyszerűen tervezhetők meg a felhasználói felületek, és integrálhatók az AWS szolgáltatások.
+
+Bemutató anyagai a [09-aws-amplify-studio](09-aws-amplify-studio) mappában találhatók.  
