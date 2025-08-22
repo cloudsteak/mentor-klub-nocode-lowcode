@@ -16,6 +16,7 @@ NoCode:
 
 LowCode:
 - [Amazon LightSail](#amazon-lightsail)
+- [AWS App Runner](#aws-app-runner)
 
 ## AWS CLI telepítés és konfigurálás
 
@@ -62,3 +63,9 @@ Bemutató anyagai a [06-azure-iot-central](06-azure-iot-central) mappában talá
 Az Amazon LightSail egy egyszerűsített felhőalapú szolgáltatás, amely lehetővé teszi a felhasználók számára, hogy könnyedén létrehozzanak és kezeljenek virtuális magánszervereket. A LightSail segítségével gyorsan és egyszerűen indíthatók el webalkalmazások, blogok és egyéb projektek.
 
 Bemutató anyagai a [07-amazon-lightsail](07-amazon-lightsail) mappában találhatók.  
+
+## AWS App Runner
+
+Az AWS App Runner egy felhőalapú szolgáltatás, amely lehetővé teszi a fejlesztők számára, hogy könnyedén telepítsenek és futtassanak konténerizált webalkalmazásokat anélkül, hogy a háttérinfrastruktúrával kellene foglalkozniuk.
+
+Bemutató anyagai a [08-aws-app-runner](08-aws-app-runner) mappában találhatók.
