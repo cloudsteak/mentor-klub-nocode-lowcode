@@ -19,6 +19,7 @@ LowCode:
 - [AWS App Runner](#aws-app-runner)
 - [AWS Amplify Studio](#aws-amplify-studio)
 - [AWS App Studio](#aws-app-studio)
+- [AWS Step Functions](#aws-step-functions)
 
 ## AWS CLI telepítés és konfigurálás
 
@@ -83,3 +84,9 @@ Bemutató anyagai a [09-aws-amplify-studio](09-aws-amplify-studio) mappában tal
 Az AWS App Studio egy vizuális fejlesztői környezet, amely lehetővé teszi a felhasználók számára, hogy könnyedén létrehozzanak és kezeljenek web- és mobilalkalmazásokat. Az App Studio segítségével gyorsan és egyszerűen tervezhetők meg a felhasználói felületek, és integrálhatók az AWS szolgáltatások.
 
 Bemutató anyagai a [10-aws-app-studio](10-aws-app-studio) mappában találhatók.
+
+## AWS Step Functions
+
+Az AWS Step Functions egy felhőalapú szolgáltatás, amely lehetővé teszi a felhasználók számára, hogy könnyedén létrehozzanak és kezeljenek összetett munkafolyamatokat. A Step Functions segítségével vizuálisan tervezhetők meg a munkafolyamatok, és integrálhatók az AWS szolgáltatások.
+
+Bemutató anyagai a [11-aws-step-functions](11-aws-step-functions) mappában találhatók.

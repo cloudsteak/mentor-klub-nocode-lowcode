@@ -1,0 +1,5 @@
+{
+  "bucket": "fajlfeldolgozo",
+  "sourceKey": "beerkezo/Bolti_eladasok.csv",
+  "targetKey": "feldolgozott/Bolti_eladasok.csv"
+}
