@@ -18,6 +18,7 @@ LowCode:
 - [Amazon LightSail](#amazon-lightsail)
 - [AWS App Runner](#aws-app-runner)
 - [AWS Amplify Studio](#aws-amplify-studio)
+- [AWS App Studio](#aws-app-studio)
 
 ## AWS CLI telepítés és konfigurálás
 
@@ -76,3 +77,9 @@ Bemutató anyagai a [08-aws-app-runner](08-aws-app-runner) mappában található
 Az AWS Amplify Studio egy vizuális fejlesztői környezet, amely lehetővé teszi a felhasználók számára, hogy könnyedén létrehozzanak és kezeljenek web- és mobilalkalmazásokat. Az Amplify Studio segítségével gyorsan és egyszerűen tervezhetők meg a felhasználói felületek, és integrálhatók az AWS szolgáltatások.
 
 Bemutató anyagai a [09-aws-amplify-studio](09-aws-amplify-studio) mappában találhatók.  
+
+## AWS App Studio
+
+Az AWS App Studio egy vizuális fejlesztői környezet, amely lehetővé teszi a felhasználók számára, hogy könnyedén létrehozzanak és kezeljenek web- és mobilalkalmazásokat. Az App Studio segítségével gyorsan és egyszerűen tervezhetők meg a felhasználói felületek, és integrálhatók az AWS szolgáltatások.
+
+Bemutató anyagai a [10-aws-app-studio](10-aws-app-studio) mappában találhatók.
