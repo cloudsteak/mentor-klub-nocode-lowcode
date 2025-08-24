@@ -1,0 +1,88 @@
+Resources:
+  VirtualisHalozat:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+      Tags:
+        - Key: Name
+          Value: nocode-lowcode
+  FrontendSubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref VirtualisHalozat
+      CidrBlock: 10.0.1.0/24
+      MapPublicIpOnLaunch: true
+      AvailabilityZone: eu-central-1a
+      Tags:
+        - Key: Name
+          Value: frontend-1a
+  BackendSubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref VirtualisHalozat
+      CidrBlock: 10.0.2.0/24
+      MapPublicIpOnLaunch: false
+      AvailabilityZone: eu-central-1b
+      Tags:
+        - Key: Name
+          Value: backend-1b
+  InternetKapcsolat:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: nocode-lowcode
+  UtvonalValaszto:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref VirtualisHalozat
+      Tags:
+        - Key: Name
+          Value: nocode-lowcode
+  UtvonalInternet:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId: !Ref UtvonalValaszto
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref InternetKapcsolat
+  InternetKapcsolatCsatolas:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref VirtualisHalozat
+      InternetGatewayId: !Ref InternetKapcsolat
+  BiztonsagiCsoport:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allow SSH
+      VpcId: !Ref VirtualisHalozat
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+      Tags:
+        - Key: Name
+          Value: nocode-lowcode
+  VirtualisLinux:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t3.micro
+      ImageId: ami-015cbce10f839bd0c
+      SubnetId: !Ref FrontendSubnet
+      SecurityGroupIds:
+        - !Ref BiztonsagiCsoport
+      Tags:
+        - Key: Name
+          Value: nocode-lowcode
+      KeyName: !Ref SSHKulcs
+  SSHKulcs:
+    Type: AWS::EC2::KeyPair
+    Properties:
+      KeyName: !Sub ${AWS::StackName}-keypair-${AWS::Region}
+  SubnetUtvonalValasztoCsatolas:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref FrontendSubnet
+      RouteTableId: !Ref UtvonalValaszto

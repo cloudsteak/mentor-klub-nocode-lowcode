@@ -20,6 +20,7 @@ LowCode:
 - [AWS Amplify Studio](#aws-amplify-studio)
 - [AWS App Studio](#aws-app-studio)
 - [AWS Step Functions](#aws-step-functions)
+- [AWS Infrastructure Composer](#aws-application-composer)
 
 ## AWS CLI telepítés és konfigurálás
 
@@ -90,3 +91,9 @@ Bemutató anyagai a [10-aws-app-studio](10-aws-app-studio) mappában található
 Az AWS Step Functions egy felhőalapú szolgáltatás, amely lehetővé teszi a felhasználók számára, hogy könnyedén létrehozzanak és kezeljenek összetett munkafolyamatokat. A Step Functions segítségével vizuálisan tervezhetők meg a munkafolyamatok, és integrálhatók az AWS szolgáltatások.
 
 Bemutató anyagai a [11-aws-step-functions](11-aws-step-functions) mappában találhatók.
+
+## AWS Infrastructure Composer
+
+Az AWS Infrastructure Composer egy vizuális fejlesztői környezet, amely lehetővé teszi a felhasználók számára, hogy könnyedén létrehozzanak és kezeljenek alkalmazásokat az AWS felhőben. Az Infrastructure Composer segítségével gyorsan és egyszerűen tervezhetők meg az alkalmazások architektúrái, és integrálhatók az AWS szolgáltatások.
+
+Bemutató anyagai a [12-aws-infrastructure-composer](12-aws-infrastructure-composer) mappában találhatók.
