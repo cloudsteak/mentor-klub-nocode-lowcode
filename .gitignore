@@ -206,3 +206,4 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 01-sagemaker-canvas/elorejelzes.csv
+.DS_Store
