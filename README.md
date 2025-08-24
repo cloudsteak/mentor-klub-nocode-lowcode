@@ -20,7 +20,8 @@ LowCode:
 - [AWS Amplify Studio](#aws-amplify-studio)
 - [AWS App Studio](#aws-app-studio)
 - [AWS Step Functions](#aws-step-functions)
-- [AWS Infrastructure Composer](#aws-application-composer)
+- [AWS Infrastructure Composer](#aws-infrastructure-composer)
+- [AWS Proton](#aws-proton)
 
 ## AWS CLI telepítés és konfigurálás
 
@@ -97,3 +98,9 @@ Bemutató anyagai a [11-aws-step-functions](11-aws-step-functions) mappában tal
 Az AWS Infrastructure Composer egy vizuális fejlesztői környezet, amely lehetővé teszi a felhasználók számára, hogy könnyedén létrehozzanak és kezeljenek alkalmazásokat az AWS felhőben. Az Infrastructure Composer segítségével gyorsan és egyszerűen tervezhetők meg az alkalmazások architektúrái, és integrálhatók az AWS szolgáltatások.
 
 Bemutató anyagai a [12-aws-infrastructure-composer](12-aws-infrastructure-composer) mappában találhatók.
+
+## AWS Proton
+
+Az AWS Proton egy felhőalapú szolgáltatás, amely lehetővé teszi a fejlesztők számára, hogy könnyedén telepítsenek és kezeljenek konténerizált alkalmazásokat. Az AWS Proton segítségével a fejlesztők egyszerűen definiálhatják az alkalmazások architektúráját, és automatizálhatják a telepítési folyamatokat.
+
+Bemutató anyagai a [13-aws-proton](13-aws-proton) mappában találhatók.
