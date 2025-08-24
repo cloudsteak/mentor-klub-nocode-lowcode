@@ -23,6 +23,7 @@ LowCode:
 - [AWS Infrastructure Composer](#aws-infrastructure-composer)
 - [AWS Proton](#aws-proton)
 - [Azure Functions](#azure-functions)
+- [Azure Logic Apps](#azure-logic-apps)
 
 ## AWS CLI telepítés és konfigurálás
 
@@ -111,3 +112,9 @@ Bemutató anyagai a [13-aws-proton](13-aws-proton) mappában találhatók.
 Az Azure Functions egy felhőalapú eseményvezérelt számítási szolgáltatás, amely lehetővé teszi a fejlesztők számára, hogy könnyedén létrehozzanak és futtassanak kódot válaszul eseményekre anélkül, hogy a háttérinfrastruktúrával kellene foglalkozniuk.
 
 Bemutató anyagai a [14-azure-functions](14-azure-functions) mappában találhatók.
+
+## Azure Logic Apps
+
+Az Azure Logic Apps egy felhőalapú szolgáltatás, amely lehetővé teszi a felhasználók számára, hogy könnyedén létrehozzanak és kezeljenek automatizált munkafolyamatokat. A Logic Apps segítségével a felhasználók vizuálisan tervezhetik meg a munkafolyamatokat, és integrálhatják az Azure szolgáltatásokat.
+
+Bemutató anyagai a [15-azure-logic-apps](15-azure-logic-apps) mappában találhatók.
