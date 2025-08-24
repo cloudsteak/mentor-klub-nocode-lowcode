@@ -22,6 +22,7 @@ LowCode:
 - [AWS Step Functions](#aws-step-functions)
 - [AWS Infrastructure Composer](#aws-infrastructure-composer)
 - [AWS Proton](#aws-proton)
+- [Azure Functions](#azure-functions)
 
 ## AWS CLI telepítés és konfigurálás
 
@@ -104,3 +105,9 @@ Bemutató anyagai a [12-aws-infrastructure-composer](12-aws-infrastructure-compo
 Az AWS Proton egy felhőalapú szolgáltatás, amely lehetővé teszi a fejlesztők számára, hogy könnyedén telepítsenek és kezeljenek konténerizált alkalmazásokat. Az AWS Proton segítségével a fejlesztők egyszerűen definiálhatják az alkalmazások architektúráját, és automatizálhatják a telepítési folyamatokat.
 
 Bemutató anyagai a [13-aws-proton](13-aws-proton) mappában találhatók.
+
+## Azure Functions
+
+Az Azure Functions egy felhőalapú eseményvezérelt számítási szolgáltatás, amely lehetővé teszi a fejlesztők számára, hogy könnyedén létrehozzanak és futtassanak kódot válaszul eseményekre anélkül, hogy a háttérinfrastruktúrával kellene foglalkozniuk.
+
+Bemutató anyagai a [14-azure-functions](14-azure-functions) mappában találhatók.
