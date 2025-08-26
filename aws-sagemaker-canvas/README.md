@@ -11,7 +11,8 @@ Az AWS Sagemaker Canvas egy vizuális eszköz, amely lehetővé teszi a felhaszn
 ## Fontos
 
 1. Kapcsold be a közvetlen deployt Canvasból: Admin configurations → Domains → a domainod → Canvas settings → kapcsold be: Enable direct deployment of Canvas models.
-2. Deployment-nél, ha ezt az üzenetet kapod:
+2. Engedélyezd a helyi fájlok feltöltését is. Admin configurations → Domains → a domainod → Canvas settings → kapcsold be: Enable local file uploads.
+3. Deployment-nél, ha ezt az üzenetet kapod:
 ```
 Your AWS account's usage for the 'ml.m5.4xlarge' transform instance has reached its limit, and you're requesting 1 additional instance. Contact your administrator to increase the quota for your account. If you're an administrator or an individual user, use the AWS Service Quotas console to request an increase for the 'Maximum number of instances' quota.
 ```
@@ -28,7 +29,7 @@ Your AWS account's usage for the 'ml.m5.4xlarge' transform instance has reached 
 Parancs:
 
 ```bash
-export AWS_DEFAULT_REGION=eu-north-1
+export AWS_DEFAULT_REGION=eu-central-1
 export ENDPOINT_NAME="A TE ENDPOINT-OD NEVE. Pl.: bolti-bevetelek"
 ```
 

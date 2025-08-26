@@ -35,25 +35,25 @@ A telepítés és konfigurálás lépései megtalálhtók itt: https://github.co
 
 Az AWS Sagemaker Canvas egy vizuális eszköz, amely lehetővé teszi a felhasználók számára, hogy gépi tanulási modelleket építsenek és tanítsanak anélkül, hogy kódolniuk kellene. A Canvas segítségével könnyedén importálhatók adatok, előkészíthetők és modellek hozhatók létre.
 
-Bemutató anyagai a [sagemaker-canvas](sagemaker-canvas) mappában találhatók.
+Bemutató anyagai a [aws-sagemaker-canvas](aws-sagemaker-canvas) mappában találhatók.
 
 ## Amazon QuickSight
 
 Az Amazon QuickSight egy felhőalapú üzleti intelligencia szolgáltatás, amely lehetővé teszi a felhasználók számára, hogy interaktív vizualizációkat és jelentéseket készítsenek az adataikból. A QuickSight segítségével könnyedén elemezhetők az adatok, és megoszthatók a csapatokkal.
 
-Bemutató anyagai a [quicksight](quicksight) mappában találhatók.
+Bemutató anyagai a [aws-quicksight](aws-quicksight) mappában találhatók.
 
 ## Amazon AppFlow
 
 Az Amazon AppFlow egy felhőalapú szolgáltatás, amely lehetővé teszi az adatok egyszerű és biztonságos átvitelét különböző SaaS alkalmazások és AWS szolgáltatások között. Az AppFlow segítségével könnyedén integrálhatók az adatok, és automatizálhatók az adatfolyamok.
 
-Bemutató anyagai a [appflow](appflow) mappában találhatók.
+Bemutató anyagai a [aws-appflow](aws-appflow) mappában találhatók.
 
 ## AWS Glue DataBrew
 
 Az AWS Glue DataBrew egy vizuális adat-előkészítő szolgáltatás, amely lehetővé teszi a felhasználók számára, hogy könnyedén előkészítsék az adataikat anélkül, hogy kódolniuk kellene. A DataBrew segítségével gyorsan és egyszerűen végezhetők el az adattisztítási és átalakítási feladatok.
 
-Bemutató anyagai a [glue-databrew](glue-databrew) mappában találhatók.
+Bemutató anyagai a [aws-glue-databrew](aws-glue-databrew) mappában találhatók.
 
 ## Azure Data Factory
 
