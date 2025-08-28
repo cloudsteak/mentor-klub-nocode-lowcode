@@ -27,8 +27,11 @@ Van egy Wordpress alapú Woocommerce webshop, amelyben a vásárlások adatai t�
 6. Add meg a weboldal URL-jét (Pl.: https://webshop.hu), majd kattints a "Connect" gombra.
 7. A kapcsolat létrejön, és megjelenik a "Connections" listában.
 
+
 ## Fontos
 
+- AppFlow-ban állítható a kimeneti formátum. (File format settings)
+- Woocommerce kapcsolat esetén jó példa ha az  "Order" objektumot használjuk forrásként.
 - Ha Amazon QuickSight-ban szeretnéd használni az AppFlow által létrehozott adatokat, akkor szükséges, hogy a QuickSight hozzáférést kapjon az S3 bucket-hez, ahová az AppFlow az adatokat feltölti.
   - Ehhez navigálj a QuickSight szolgáltatáshoz, majd a "Manage QuickSight" → "Security & permissions" menüpontra, és add hozzá az S3 bucket-hez való hozzáférést.
   - Amikor a Dataset-et létrehozod, szükséged lesz egy manifest fájlra, amely leírja az adatokat. Ezt a manifest fájlt az AppFlow automatikusan létrehozza, amikor az adatokat feltölti az S3 bucket-be. Találsz egy példa manifest fájlt a mappában, amelyet az AppFlow létrehozott: `manifest.json`. Ezt a manifest fájt módosítsd a saját S3 bucket-ed elérési útjára, majd töltsd fel a QuickSight-ba.
