@@ -31,7 +31,9 @@ CSV adatok automatizált betöltése tárhelyre, alap tisztítás (oszlopok kiv�
 5. Fontos: Hierarchical namespace: Enabled ajánlott
 6. Kattints a "Létrehozás" gombra.
 7. Várd meg, amíg a tárfiók létrejön, majd navigálj a tárfiókhoz.
-8. Storage‑ra adj "Storage Blob Data Contributor" jogot a Data Factory Managed Identity‑nek (Storage → Access control (IAM) → Add role assignment).
+8. Storage‑ra adj "Storage-blobadatok közreműködője" jogot a Data Factory Managed Identity‑nek (Storage → Access control (IAM) → Add role assignment). (Ehhez szükséges jogok: tulajdonos vagy Felhasználói hozzáférés adminisztrátora)
+9. Hozzunk létre két tárolót: `bemenet` és `kimenet`.
+10. A `bemenet` tárolóba töltsük fel a [Hibas_adatok.xlsx](Hibas_adatok.xlsx) fájlt.
 
 ## Data Factory stúdió használata
 
@@ -44,7 +46,7 @@ CSV adatok automatizált betöltése tárhelyre, alap tisztítás (oszlopok kiv�
 
 A hibás adatokat tartalmazó XLSX fájl betöltése.
 
-1. A Data Factory stúdióban navigálj az "Author" → "Datasets" menüpontra.
+1. A Data Factory stúdióban navigálj az "Szerző" → "Adatkészlet" menüpontra.
 2. Kattints az "Új" gombra, majd válaszd az "Azure Data Lake Storage Gen2" lehetőséget.
 3. Majd válaszd az "Excel" lehetőséget.
 4. Add meg az adatkészlet nevét (Pl.: HibasAdatok).
@@ -53,16 +55,16 @@ A hibás adatokat tartalmazó XLSX fájl betöltése.
    - Authentication type: System-assigned managed identity
    - Storage account: Válaszd ki a korábban létrehozott tárfiókot.
    - Kattints a "Create" gombra.
-6. A "File path" mezőben válaszd ki a hibás adatokat tartalmazó fájlt (Pl.: `Hibás_adatok.xlsx`).
-7. A "Sheet name" mezőben válaszd ki a megfelelő munkalapot (Pl.: `Sheet1`).
-8. A "First row as header" opciót jelöld be.
+6. A "Fájl elérési útja" mezőben válaszd ki a hibás adatokat tartalmazó fájlt (Pl.: `Hibás_adatok.xlsx`).
+7. A "Lap neve" mezőben válaszd ki a megfelelő munkalapot (Pl.: `Sheet1`).
+8. A "Első sor mint fejléc" opciót jelöld be.
 9. Kattints a "Ok" gombra.
 
 ### Kimeneti adatkészlet
 
 A tisztított adatokat tartalmazó Parquet fájl létrehozása.
 
-1. A Data Factory stúdióban navigálj az "Author" → "Datasets" menüpontra.
+1. A Data Factory stúdióban navigálj az "Szerző" → "Adatkészlet" menüpontra.
 2. Kattints az "Új" gombra, majd válaszd az "Azure Data Lake Storage Gen2" lehetőséget.
 3. Majd válaszd a "Parquet" lehetőséget.
 4. Add meg az adatkészlet nevét (Pl.: TisztaAdatok).
@@ -76,7 +78,7 @@ _Megjegyzés: Mentsük el a jelenlegi munkát a Data Factory stúdióban, hogy n
 
 ### Tisztítási DataFlow létrehozása
 
-1. A Data Factory stúdióban navigálj az "Author" → "Data flows" menüpontra.
+1. A Data Factory stúdióban navigálj az "Szerző" → "Data flows" menüpontra.
 2. Kattints az "Új" gombra, majd válaszd a "Data flow" lehetőséget.
 3. Add meg a DataFlow nevét (Pl.: AdatTisztitas).
 4. A DataFlow szerkesztőben kattints az "Add source" gombra.
@@ -84,13 +86,13 @@ _Megjegyzés: Mentsük el a jelenlegi munkát a Data Factory stúdióban, hogy n
 6. Options részben kapcsold be az Allow schema drift opciót, hogy a DataFlow automatikusan kezelje az oszlopok változásait.
 7. Sampling: Válaszd ki a "First 100 rows" lehetőséget, hogy csak az első 100 sort használja a DataFlow a teszteléshez.
 8. A "Projection" fül alatt ellenőrizd, hogy az oszlopok helyesen vannak-e beállítva. Ha szükséges, módosítsd az oszlopok típusát.
-9. Kattints az "Add transformation" gombra, itt láthatod a különböző adattranszformációs lehetőségeket.
+9. Kattints a "+" gombra, itt láthatod a különböző adattranszformációs lehetőségeket.
 
 ### Adattisztítási lépések
 
 1. **Irányítószám tisztítása**
 
-   - Válaszd ki az "Add transformation" → "Derived column" lehetőséget.
+   - Válaszd ki a "+" → "Származtatott oszlop" lehetőséget.
    - Adj hozzá egy új oszlopot, amelyben a következő kifejezést használod:
      ```sql
      regexReplace(regexReplace(regexReplace(iranyitoszam, '^(?i)H-', ''),'[^0-9]', ''),'^0+', '')
@@ -99,7 +101,7 @@ _Megjegyzés: Mentsük el a jelenlegi munkát a Data Factory stúdióban, hogy n
 
 2. **Telefonszám tisztítása**
 
-   - Válaszd ki az "Add transformation" → "Derived column" lehetőséget.
+   - Válaszd ki a "+" → "Származtatott oszlop" lehetőséget.
    - Adj hozzá egy új oszlopot (`telefonszam_norm`), amelyben a következő kifejezést használod:
 
      ```sql
@@ -112,7 +114,7 @@ _Megjegyzés: Mentsük el a jelenlegi munkát a Data Factory stúdióban, hogy n
    - Ez a kifejezés ellenőrzi, hogy a telefonszám 06-tal kezdődik-e, és ha igen, akkor +36-ra cseréli.
 
 3. **Testsúly tisztítása**
-   - Válaszd ki az "Add transformation" → "Derived column" lehetőséget.
+   - Válaszd ki a "+" → "Származtatott oszlop" lehetőséget.
    - Adj hozzá egy új oszlopot (`testsuly_kg_norm`), amelyben a következő kifejezést használod:
      ```sql
       toInteger(regexReplace(toString(testsuly_kg), `[^0-9]`, ''))
@@ -122,7 +124,7 @@ _Megjegyzés: Mentsük el a jelenlegi munkát a Data Factory stúdióban, hogy n
 ### Sink hozzáadása
 
 1. Ha készen vagy az adattisztítási lépésekkel, akkor adj hozzá egy "Sink" komponenst a DataFlow-hoz.
-2. A DataFlow szerkesztőben az utolsó adattisztítási lépés után kattints a "+" gombra, majd válaszd a "Sink" lehetőséget.
+2. A DataFlow szerkesztőben az utolsó adattisztítási lépés után kattints a "+" gombra, majd válaszd a "Sink" lehetőséget. (az utolsó elem a listában)
 3. Válaszd ki a korábban létrehozott `TisztaAdatok` adatkészletet.
 4. A "Sink" beállításoknál adj egy nevet `TisztaKimenet`.
 5. ADataset type: Válaszd a "TisztaAdatok" lehetőséget (amit korábban létrehoztál).
@@ -132,7 +134,7 @@ _Megjegyzés: Mentsük el a jelenlegi munkát a Data Factory stúdióban, hogy n
 
 ### Pipeline létrehozása
 
-1. A Data Factory stúdióban navigálj az "Author" → "Pipelines" menüpontra.
+1. A Data Factory stúdióban navigálj az "Szerző" → "Pipelines" menüpontra.
 2. Kattints az "Új" gombra, majd válaszd a "Pipeline" lehetőséget.
 3. Add meg a Pipeline nevét (Pl.: AdatTisztitasiFolyamat).
 4. a. Ha ütemezetten szeretnéd futtatni az adattisztítást, akkor van lehetőséged ütemezés létrehozására:

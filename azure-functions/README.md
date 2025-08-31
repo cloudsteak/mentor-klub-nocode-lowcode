@@ -1,6 +1,6 @@
 # Azure Functions
 
-Az Azure Functions egy felhőalapú eseményvezérelt számítási szolgáltatás, amely lehetővé teszi a fejlesztők számára, hogy könnyedén létrehozzanak és futtassanak kódot válaszul eseményekre anélkül, hogy a háttérinfrastruktúrával kellene foglalkozniuk.
+Az Azure Functions egy felhőalapú eseményvezérelt számítási szolgáltatás, amely lehetővé teszi a fejlesztők számára, hogy könnyedén létrehozzanak és futtassanak kódot anélkül, hogy a háttérinfrastruktúrával kellene foglalkozniuk.
 
 ## Fájlok
 
@@ -32,10 +32,10 @@ Azure Function segítségével készítünk egy egyszerű megoldást, amely egy 
 ### Azure Functions létrehozása
 
 1. Nyisd meg a [Azure Portal](https://portal.azure.com/) weboldalt.
-2. Kattints az "Create a resource" gombra.
-3. Keress rá és válaszd ki a "Function App" lehetőséget.
+2. Kattints az "Új erőforrás létrehozása" gombra.
+3. Keress rá és válaszd ki a "Függvényalkalmazás" lehetőséget.
 4. Töltsd ki a szükséges mezőket (előfizetés, erőforráscsoport, név, stb.).
-   - Díjcsomag: Consumption (Ez azt jelenti, hogy csak a ténylegesen használt erőforrásokért kell fizetni.)
+   - Díjcsomag: Felhasználás (Ez azt jelenti, hogy csak a ténylegesen használt erőforrásokért kell fizetni.)
    - Neve legyen: hirlevel-feliratkozas-funkcio
    - OS: Windows
    - Programnyelv: NodeJs 22 LTS
