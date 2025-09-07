@@ -147,7 +147,7 @@ Megmutatom az Infrastructure Composer alapfunkcióit egy VPC és egy EC2 létreh
 }
 ```
 
-13. SSH key: `SSHKulcs`
+13. SSH KeyPair: `SSHKulcs`
 
 ```json
 {
@@ -157,7 +157,7 @@ Megmutatom az Infrastructure Composer alapfunkcióit egy VPC és egy EC2 létreh
 }
 ```
 
-14. Virtual Machine: `VirtualisLinux`
+14. Virtual Machine (EC2 instance): `VirtualisLinux`
 
 ```json
 {
@@ -168,7 +168,7 @@ Megmutatom az Infrastructure Composer alapfunkcióit egy VPC és egy EC2 létreh
   },
   "SecurityGroupIds": [
     {
-      "Ref": "SecurityGroup"
+      "Ref": "BiztonsagiCsoport"
     }
   ],
   "Tags": [

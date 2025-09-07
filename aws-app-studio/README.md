@@ -8,13 +8,10 @@ Az AWS App Studio egy vizuális fejlesztői eszköz, amely lehetővé teszi alka
 
 ## Példa
 
-Egyszerű feladat/bejelentés kezelő táblázatból 10 perc alatt
+A mi példánban most egy hírlevél feliratkozó alkalmazást fogunk létrehozni, amely lehetővé teszi a felhasználók számára, hogy feliratkozzanak egy hírlevélre, és az admin csapat számára, hogy kezelje a feliratkozókat ugyanabban az alkalmazásban.
 
 ## Előkészület
 
-### Adatok előkészítése
-
-Adatok előkészítése. Mi példánk: jegyek.csv
 
 ### AWS App Studio Instance létrehozása
 
@@ -84,6 +81,8 @@ Adatok előkészítése. Mi példánk: jegyek.csv
 - A szolgáltatás jelenleg csak az alábbi AWS régiókban érhető el: US West (Oregon), Europe (Ireland).
 
 ## Kiegészítő információk
+
+Ha egy gyors információs alkalmazást szeretnél lkétrehozni, akkor az AWS App Studio egy nagyszerű eszköz erre. Íme néhány adat, hogy építs valami hasznosat:
 
 - Cég: Tenara
 - Bemutatkozás: A Tenara egy technológiai csapat, amely cloud-natív és AI-alapú rendszereket tervez, épít és üzemeltet. Ügyfeleinknek végigkísért utat adunk: stratégiai workshop → architektúra → megvalósítás → üzemeltetés és folyamatos fejlesztés. Erősségünk a mérnöki fegyelem és az automatizáció: infrastruktúrát kódból (IaC) kezelünk, CI/CD-t építünk, Kubernetesen és felhőkben (pl. Azure, AWS) skálázunk, miközben a biztonság és a megfigyelhetőség (observability) alapértelmezett. Hiszünk az egyszerű, karbantartható megoldásokban, amelyek mérhető üzleti eredményt hoznak — gyorsabb piacra lépést, alacsonyabb üzemeltetési kockázatot és átlátható költségeket.

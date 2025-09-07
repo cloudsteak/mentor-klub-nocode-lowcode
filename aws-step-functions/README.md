@@ -113,7 +113,7 @@ Több fájl automatikus átmozgatása S3 könyvtárak között Step Functions-el
     - Az ott lévő JSON-t módosítsd a következőképpen:
     - `"QueryLanguage": "JSONData"` → `"QueryLanguage": "JSONPath"`
     - `"Arguments"` → `"Parameters"`
-    - A `"Next": "FajlokTorlese"` sor elé add hozzá ezt: `"ResultPath": null,`
+    - A `"Next": "FajlokTorlese"` (FajlokMasolasa lépésen belül) sor elé add hozzá ezt: `"ResultPath": null,`
 
 17. Így néz ki:
 
