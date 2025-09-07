@@ -5,17 +5,19 @@ Az anyagok a Mentor Klub keretein belül készültek, és céljuk, hogy segítse
 
 ## Tartalomjegyzék
 
-NoCode:
 - [AWS Cli telepítés és konfigurálás](#aws-cli-telepítés-és-konfigurálás)
-- [AWS Sagemaker Canvas](#aws-sagemaker-canvas)
-- [Amazon QuickSight](#amazon-quicksight)
+
+NoCode:
 - [Amazon AppFlow](#amazon-appflow)
+- [Amazon QuickSight](#amazon-quicksight)
 - [AWS Glue DataBrew](#aws-glue-databrew)
-- [Azure Data Factory](#azure-data-factory)
+- [AWS Sagemaker Canvas](#aws-sagemaker-canvas)
 - [Azure IoT Central](#azure-iot-central)
+- [Azure Data Factory](#azure-data-factory)
 - [Azure Logic Apps](#azure-logic-apps)
 
 LowCode:
+- [Azure Functions](#azure-functions)
 - [Amazon LightSail](#amazon-lightsail)
 - [AWS App Runner](#aws-app-runner)
 - [AWS Amplify Studio](#aws-amplify-studio)
@@ -23,13 +25,18 @@ LowCode:
 - [AWS Step Functions](#aws-step-functions)
 - [AWS Infrastructure Composer](#aws-infrastructure-composer)
 - [AWS Proton](#aws-proton)
-- [Azure Functions](#azure-functions)
+
 
 
 ## AWS CLI telepítés és konfigurálás
 
 A telepítés és konfigurálás lépései megtalálhtók itt: https://github.com/cloudsteak/trn-aws-common/blob/main/cli.md
 
+## Amazon AppFlow
+
+Az Amazon AppFlow egy felhőalapú szolgáltatás, amely lehetővé teszi az adatok egyszerű és biztonságos átvitelét különböző SaaS alkalmazások és AWS szolgáltatások között. Az AppFlow segítségével könnyedén integrálhatók az adatok, és automatizálhatók az adatfolyamok.
+
+Bemutató anyagai a [aws-appflow](aws-appflow) mappában találhatók.
 
 ## AWS Sagemaker Canvas
 
@@ -43,11 +50,6 @@ Az Amazon QuickSight egy felhőalapú üzleti intelligencia szolgáltatás, amel
 
 Bemutató anyagai a [aws-quicksight](aws-quicksight) mappában találhatók.
 
-## Amazon AppFlow
-
-Az Amazon AppFlow egy felhőalapú szolgáltatás, amely lehetővé teszi az adatok egyszerű és biztonságos átvitelét különböző SaaS alkalmazások és AWS szolgáltatások között. Az AppFlow segítségével könnyedén integrálhatók az adatok, és automatizálhatók az adatfolyamok.
-
-Bemutató anyagai a [aws-appflow](aws-appflow) mappában találhatók.
 
 ## AWS Glue DataBrew
 
