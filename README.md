@@ -38,12 +38,6 @@ Az Amazon AppFlow egy felhőalapú szolgáltatás, amely lehetővé teszi az ada
 
 Bemutató anyagai a [aws-appflow](aws-appflow) mappában találhatók.
 
-## AWS Sagemaker Canvas
-
-Az AWS Sagemaker Canvas egy vizuális eszköz, amely lehetővé teszi a felhasználók számára, hogy gépi tanulási modelleket építsenek és tanítsanak anélkül, hogy kódolniuk kellene. A Canvas segítségével könnyedén importálhatók adatok, előkészíthetők és modellek hozhatók létre.
-
-Bemutató anyagai a [aws-sagemaker-canvas](aws-sagemaker-canvas) mappában találhatók.
-
 ## Amazon QuickSight
 
 Az Amazon QuickSight egy felhőalapú üzleti intelligencia szolgáltatás, amely lehetővé teszi a felhasználók számára, hogy interaktív vizualizációkat és jelentéseket készítsenek az adataikból. A QuickSight segítségével könnyedén elemezhetők az adatok, és megoszthatók a csapatokkal.
@@ -57,10 +51,13 @@ Az AWS Glue DataBrew egy vizuális adat-előkészítő szolgáltatás, amely leh
 
 Bemutató anyagai a [aws-glue-databrew](aws-glue-databrew) mappában találhatók.
 
-## Azure Data Factory
 
-Az Azure Data Factory egy felhőalapú adat-integrációs szolgáltatás, amely lehetővé teszi az adatok mozgatását és átalakítását különböző forrásokból és célokba. Az ADF segítségével könnyedén létrehozhatók adatfolyamok, amelyek automatizálják az adatok betöltését és feldolgozását.
-Bemutató anyagai a [azure-data-factory](azure-data-factory) mappában találhatók.
+## AWS Sagemaker Canvas
+
+Az AWS Sagemaker Canvas egy vizuális eszköz, amely lehetővé teszi a felhasználók számára, hogy gépi tanulási modelleket építsenek és tanítsanak anélkül, hogy kódolniuk kellene. A Canvas segítségével könnyedén importálhatók adatok, előkészíthetők és modellek hozhatók létre.
+
+Bemutató anyagai a [aws-sagemaker-canvas](aws-sagemaker-canvas) mappában találhatók.
+
 
 ## Azure IoT Central
 
@@ -68,11 +65,27 @@ Az Azure IoT Central egy felhőalapú IoT (Internet of Things) alkalmazás, amel
 
 Bemutató anyagai a [azure-iot-central](azure-iot-central) mappában találhatók.
 
+
+## Azure Data Factory
+
+Az Azure Data Factory egy felhőalapú adat-integrációs szolgáltatás, amely lehetővé teszi az adatok mozgatását és átalakítását különböző forrásokból és célokba. Az ADF segítségével könnyedén létrehozhatók adatfolyamok, amelyek automatizálják az adatok betöltését és feldolgozását.
+
+Bemutató anyagai a [azure-data-factory](azure-data-factory) mappában találhatók.
+
+
 ## Azure Logic Apps
 
 Az Azure Logic Apps egy felhőalapú szolgáltatás, amely lehetővé teszi a felhasználók számára, hogy könnyedén létrehozzanak és kezeljenek automatizált munkafolyamatokat. A Logic Apps segítségével a felhasználók vizuálisan tervezhetik meg a munkafolyamatokat, és integrálhatják az Azure szolgáltatásokat.
 
 Bemutató anyagai a [azure-logic-apps](azure-logic-apps) mappában találhatók.
+
+
+## Azure Functions
+
+Az Azure Functions egy felhőalapú eseményvezérelt számítási szolgáltatás, amely lehetővé teszi a fejlesztők számára, hogy könnyedén létrehozzanak és futtassanak kódot válaszul eseményekre anélkül, hogy a háttérinfrastruktúrával kellene foglalkozniuk.
+
+Bemutató anyagai a [azure-functions](azure-functions) mappában találhatók.
+
 
 ## Amazon LightSail
 
@@ -80,11 +93,13 @@ Az Amazon LightSail egy egyszerűsített felhőalapú szolgáltatás, amely lehe
 
 Bemutató anyagai a [amazon-lightsail](amazon-lightsail) mappában találhatók.  
 
+
 ## AWS App Runner
 
 Az AWS App Runner egy felhőalapú szolgáltatás, amely lehetővé teszi a fejlesztők számára, hogy könnyedén telepítsenek és futtassanak konténerizált webalkalmazásokat anélkül, hogy a háttérinfrastruktúrával kellene foglalkozniuk.
 
 Bemutató anyagai a [aws-app-runner](aws-app-runner) mappában találhatók.
+
 
 ## AWS Amplify Studio
 
@@ -92,17 +107,20 @@ Az AWS Amplify Studio egy vizuális fejlesztői környezet, amely lehetővé tes
 
 Bemutató anyagai a [aws-amplify-studio](aws-amplify-studio) mappában találhatók.  
 
+
 ## AWS App Studio
 
 Az AWS App Studio egy vizuális fejlesztői környezet, amely lehetővé teszi a felhasználók számára, hogy könnyedén létrehozzanak és kezeljenek web- és mobilalkalmazásokat. Az App Studio segítségével gyorsan és egyszerűen tervezhetők meg a felhasználói felületek, és integrálhatók az AWS szolgáltatások.
 
 Bemutató anyagai a [aws-app-studio](aws-app-studio) mappában találhatók.
 
+
 ## AWS Step Functions
 
 Az AWS Step Functions egy felhőalapú szolgáltatás, amely lehetővé teszi a felhasználók számára, hogy könnyedén létrehozzanak és kezeljenek összetett munkafolyamatokat. A Step Functions segítségével vizuálisan tervezhetők meg a munkafolyamatok, és integrálhatók az AWS szolgáltatások.
 
-Bemutató anyagai a [aws-step-functions](-aws-step-functions) mappában találhatók.
+Bemutató anyagai a [aws-step-functions](aws-step-functions) mappában találhatók.
+
 
 ## AWS Infrastructure Composer
 
@@ -110,15 +128,10 @@ Az AWS Infrastructure Composer egy vizuális fejlesztői környezet, amely lehet
 
 Bemutató anyagai a [aws-infrastructure-composer](aws-infrastructure-composer) mappában találhatók.
 
+
 ## AWS Proton
 
 Az AWS Proton egy felhőalapú szolgáltatás, amely lehetővé teszi a fejlesztők számára, hogy könnyedén telepítsenek és kezeljenek konténerizált alkalmazásokat. Az AWS Proton segítségével a fejlesztők egyszerűen definiálhatják az alkalmazások architektúráját, és automatizálhatják a telepítési folyamatokat.
 
 Bemutató anyagai a [aws-proton](aws-proton) mappában találhatók.
-
-## Azure Functions
-
-Az Azure Functions egy felhőalapú eseményvezérelt számítási szolgáltatás, amely lehetővé teszi a fejlesztők számára, hogy könnyedén létrehozzanak és futtassanak kódot válaszul eseményekre anélkül, hogy a háttérinfrastruktúrával kellene foglalkozniuk.
-
-Bemutató anyagai a [azure-functions](azure-functions) mappában találhatók.
 
