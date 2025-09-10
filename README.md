@@ -6,7 +6,7 @@ Az anyagok a Mentor Klub keretein belül készültek, és céljuk, hogy segítse
 ## Tartalomjegyzék
 
 - [AWS Cli telepítés és konfigurálás](#aws-cli-telepítés-és-konfigurálás)
-- [Azure Cli telepítés]([#azure-cli-telept%C3%A9s))
+- [Azure Cli telepítés](#azure-cli-telept%C3%A9s)
 
 NoCode:
 - [Amazon AppFlow](#amazon-appflow)
