@@ -6,6 +6,7 @@ Az anyagok a Mentor Klub keretein belül készültek, és céljuk, hogy segítse
 ## Tartalomjegyzék
 
 - [AWS Cli telepítés és konfigurálás](#aws-cli-telepítés-és-konfigurálás)
+- [Azure Cli telepítés](#azure-cli-telepítés)
 
 NoCode:
 - [Amazon AppFlow](#amazon-appflow)
@@ -31,6 +32,10 @@ LowCode:
 ## AWS CLI telepítés és konfigurálás
 
 A telepítés és konfigurálás lépései megtalálhtók itt: https://github.com/cloudsteak/trn-aws-common/blob/main/cli.md
+
+## Azure CLI teleptés
+
+A telepítés és konfigurálás lépései megtalálhtók itt: https://github.com/cloudsteak/trn-azure-commandline?tab=readme-ov-file#telep%C3%ADt%C3%A9s
 
 ## Amazon AppFlow
 
